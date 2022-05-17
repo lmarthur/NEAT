@@ -20,7 +20,8 @@ class individual:
         self.binary=""
         for i in range(genome_length):
             self.binary+=format(int(self.genome[i], 16), '04b')
-        
+        self.fitness=0
+        self.id=0 #ID variable, currently unused
     
     def binary(self, genome):
         genome_length=len(self.genome)
